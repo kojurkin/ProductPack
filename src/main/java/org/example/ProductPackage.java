@@ -2,13 +2,15 @@ package org.example;
 
 import java.util.Objects;
 
-public class ProductPockage {
+public class ProductPackage {
     private String name;
     private double mass;
 
-    public void ProductPackage(String name, double mass) {
+    public ProductPackage(String name, double mass) {
         this.name = name;
         this.mass = mass;
+    }
+    public ProductPackage() {
     }
 
     public String getName() {
@@ -22,7 +24,7 @@ public class ProductPockage {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ProductPockaging that)) return false;
+        if (!(o instanceof ProductPackage that)) return false;
         return Double.compare(that.getMass(), getMass()) == 0 && getName().equals(that.getName());
     }
 

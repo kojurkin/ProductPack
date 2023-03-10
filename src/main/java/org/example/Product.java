@@ -1,2 +1,41 @@
-package org.example;public class Product {
+package org.example;
+
+import java.util.Objects;
+
+public class Product {
+    private String name;
+    private String describe;
+
+    public Product(String name, String describe) {
+        this.name = name;
+        this.describe = describe;
+    }
+
+    public Product() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescribe() {
+        return describe;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Product product)) return false;
+        return getName().equals(product.getName()) && getDescribe().equals(product.getDescribe());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getDescribe());
+    }
+
+    @Override
+    public String toString() {
+        return new String("Product name: " + this.name + ".\nDescribe: " + this.describe + ".");
+    }
 }
