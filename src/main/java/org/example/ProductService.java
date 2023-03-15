@@ -8,16 +8,12 @@ public static int countByFilter(Consignment part, Filter filter) throws Exceptio
     } if (filter == null) {
         throw new Exception("Wrong filter");
     }
-    String tmp = "";
     for(int i = 0; i < part.getProducts().size(); i++) {
-        if (part.getProducts().get(i) instanceof SingleProductInPackage) {
-            tmp = (String)((SingleProductInPackage) part.getProducts().get(i)).getName();
-        } else if (part.getProducts().get(i) instanceof WeightProductInPackage) {
-            tmp = (String)((WeightProductInPackage) part.getProducts().get(i)).getName();
-        } else {
+        Product product = part.getProducts().get(i);
+        if (!(product instanceof SingleProductInPackage) && !(product instanceof WeightProductInPackage)) {
             throw new Exception("Product isn't right");
         }
-        if(filter.apply(tmp)) {
+        if(filter.apply(product.getName())) {
             result++;
         }
     }

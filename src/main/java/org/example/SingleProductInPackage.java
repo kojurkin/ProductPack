@@ -5,7 +5,8 @@ public class SingleProductInPackage extends Product{
     private SingleProduct product;
     private int countOfProduct;
 
-    public SingleProductInPackage(int countOfProduct, SingleProduct product, ProductPackage aPackage) {
+    public SingleProductInPackage(int countOfProduct, SingleProduct product, ProductPackage aPackage) throws Exception {
+        super(product.getName(), product.getDescribe());
         this.aPackage = aPackage;
         this.product = product;
         this.countOfProduct = countOfProduct;

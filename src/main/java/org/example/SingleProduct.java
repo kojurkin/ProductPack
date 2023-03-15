@@ -3,29 +3,12 @@ package org.example;
 import java.util.Objects;
 
 public class SingleProduct extends Product{
-    private String name;
-    private String describe;
     private double weight;
 
     public SingleProduct(String name, String describe, double weight) throws Exception {
-        if(name == null || name.equals("")) {
-            throw new Exception("Give me a name");
-        }
-        this.name = name;
-        this.describe = describe;
+        super(name, describe);
         this.weight = weight;
     }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String getDescribe() {
-        return describe;
-    }
-
     public double getWeight() {
         return weight;
     }
@@ -45,6 +28,6 @@ public class SingleProduct extends Product{
 
     @Override
     public String toString() {
-        return "SingleProduct name: " + name + ".\nDescribe: " + describe + "\nWeight: " + weight;
+        return "SingleProduct name: " + getName() + ".\nDescribe: " + getDescribe() + "\nWeight: " + weight;
     }
 }

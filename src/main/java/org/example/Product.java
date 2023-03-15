@@ -6,15 +6,12 @@ public class Product {
     private String name;
     private String describe;
 
-    public Product(String name, String describe) throws Exception {
+    public Product(String name, String describe) {
         if(name == null || name.equals("")) {
-            throw new Exception("Give me a name");
+            throw new RuntimeException("Give me a name");
         }
         this.name = name;
         this.describe = describe;
-    }
-
-    public Product() {
     }
 
     public String getName() {

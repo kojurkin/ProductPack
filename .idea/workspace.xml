@@ -7,16 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50ec8d91-f004-43d0-8d02-43d019409e11" name="Changes" comment="without unittests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ProductServiceTest.java" afterDir="false" />
+    <list default="true" id="50ec8d91-f004-43d0-8d02-43d019409e11" name="Changes" comment="test dont works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BeginStringFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BeginStringFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Consignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Consignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ContainsStringFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ContainsStringFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SingleProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SingleProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SingleProductInPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SingleProductInPackage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WeightProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WeightProduct.java" afterDir="false" />
@@ -109,7 +105,7 @@
       <workItem from="1670940678298" duration="6440000" />
       <workItem from="1671498283433" duration="869000" />
       <workItem from="1678446591062" duration="2889000" />
-      <workItem from="1678449523375" duration="14339000" />
+      <workItem from="1678449523375" duration="17020000" />
     </task>
     <task id="LOCAL-00001" summary="without unittests">
       <created>1678448684454</created>
@@ -139,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678452361146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test dont works">
+      <created>1678887881644</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678887881645</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +161,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="without unittests" />
-    <option name="LAST_COMMIT_MESSAGE" value="without unittests" />
+    <MESSAGE value="test dont works" />
+    <option name="LAST_COMMIT_MESSAGE" value="test dont works" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProductPack$ProductServiceTest_countByFilter.ic" NAME="ProductServiceTest.countByFilter Coverage Results" MODIFIED="1678901381193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>

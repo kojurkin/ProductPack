@@ -6,9 +6,9 @@ import java.util.Objects;
 
 public class Consignment {
     private String describe;
-    private List products;
+    private List<Product> products;
 
-    public Consignment(List list, String describe) throws Exception {
+    public Consignment(List<Product> list, String describe) throws Exception {
         if(list == null) {
             throw new Exception("Empty list");
         }
@@ -38,11 +38,11 @@ public class Consignment {
         this.describe = describe;
     }
 
-    public List getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List products) throws Exception {
+    public void setProducts(List<Product> products) throws Exception {
         if (products == null) {
             throw new Exception("Empty list");
         }

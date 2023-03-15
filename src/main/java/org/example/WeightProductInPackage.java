@@ -6,6 +6,7 @@ public class WeightProductInPackage extends Product{
     private WeightProduct product;
 
     public WeightProductInPackage(ProductPackage aPackage, double productWeight, WeightProduct product) {
+        super(product.getName(), product.getDescribe());
         this.aPackage = aPackage;
         this.productWeight = productWeight;
         this.product = product;
