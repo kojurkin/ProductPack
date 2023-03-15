@@ -6,7 +6,10 @@ public class Product {
     private String name;
     private String describe;
 
-    public Product(String name, String describe) {
+    public Product(String name, String describe) throws Exception {
+        if(name == null || name.equals("")) {
+            throw new Exception("Give me a name");
+        }
         this.name = name;
         this.describe = describe;
     }
@@ -37,5 +40,16 @@ public class Product {
     @Override
     public String toString() {
         return new String("Product name: " + this.name + ".\nDescribe: " + this.describe + ".");
+    }
+
+    public void setName(String name) throws Exception {
+        if(name == null) {
+            throw new Exception("Give me a name");
+        }
+        this.name = name;
+    }
+
+    public void setDescribe(String describe) {
+        this.describe = describe;
     }
 }

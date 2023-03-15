@@ -1,6 +1,6 @@
 package org.example;
 
-public class WeightProductInPackage extends ProductPackage{
+public class WeightProductInPackage extends Product{
     private ProductPackage aPackage;
     private double productWeight;
     private WeightProduct product;

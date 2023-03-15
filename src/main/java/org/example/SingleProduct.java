@@ -7,7 +7,10 @@ public class SingleProduct extends Product{
     private String describe;
     private double weight;
 
-    public SingleProduct(String name, String describe, double weight) {
+    public SingleProduct(String name, String describe, double weight) throws Exception {
+        if(name == null || name.equals("")) {
+            throw new Exception("Give me a name");
+        }
         this.name = name;
         this.describe = describe;
         this.weight = weight;

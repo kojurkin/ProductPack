@@ -1,6 +1,6 @@
 package org.example;
 
-public class SingleProductInPackage extends ProductPackage{
+public class SingleProductInPackage extends Product{
     private ProductPackage aPackage;
     private SingleProduct product;
     private int countOfProduct;

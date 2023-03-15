@@ -6,7 +6,10 @@ public class ProductPackage {
     private String name;
     private double mass;
 
-    public ProductPackage(String name, double mass) {
+    public ProductPackage(String name, double mass) throws Exception {
+        if(name == null || name.equals("")) {
+            throw new Exception("Give me a name");
+        }
         this.name = name;
         this.mass = mass;
     }
