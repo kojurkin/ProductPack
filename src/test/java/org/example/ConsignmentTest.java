@@ -1,14 +1,16 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.List;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ProductServiceTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class ConsignmentTest {
 
     @Test
-    void countByFilter() throws Exception {
+    void getGross() throws Exception {
         List<Product> prods = new ArrayList<>();
         WeightProduct p2 = new WeightProduct("GoodName", "describe");
         SingleProduct p3 = new SingleProduct("GoodName", "describe", 12);
@@ -18,8 +20,7 @@ class ProductServiceTest {
         prods.add(0, good1);
         prods.add(1, good2);
         Consignment c = new Consignment(prods, "describe");
-        String str1 = "Go";
-        BeginStringFilter f = new BeginStringFilter(str1);
-        assertEquals(2, ProductService.countByFilter(c, f));
+        assertEquals(121.5, c.getGross());
+        //assertEquals(1);
     }
 }

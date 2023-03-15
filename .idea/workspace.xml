@@ -7,16 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50ec8d91-f004-43d0-8d02-43d019409e11" name="Changes" comment="test dont works">
+    <list default="true" id="50ec8d91-f004-43d0-8d02-43d019409e11" name="Changes" comment="Gonna write some tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ConsignmentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Consignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Consignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SingleProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SingleProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SingleProductInPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SingleProductInPackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WeightProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WeightProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WeightProductInPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WeightProductInPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ProductServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +65,23 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ConsignmentTest.getGross">
+    <configuration name="ConsignmentTest.getGross" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProductPack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ConsignmentTest" />
+      <option name="METHOD_NAME" value="getGross" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceTest.countByFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductPack" />
       <extension name="coverage">
@@ -90,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConsignmentTest.getGross" />
         <item itemvalue="JUnit.ProductServiceTest.countByFilter" />
       </list>
     </recent_temporary>
@@ -105,7 +116,7 @@
       <workItem from="1670940678298" duration="6440000" />
       <workItem from="1671498283433" duration="869000" />
       <workItem from="1678446591062" duration="2889000" />
-      <workItem from="1678449523375" duration="17020000" />
+      <workItem from="1678449523375" duration="17866000" />
     </task>
     <task id="LOCAL-00001" summary="without unittests">
       <created>1678448684454</created>
@@ -142,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678887881645</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gonna write some tests">
+      <created>1678901718123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678901718123</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Gonna write some tests">
+      <created>1678901754349</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678901754349</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +187,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="without unittests" />
     <MESSAGE value="test dont works" />
-    <option name="LAST_COMMIT_MESSAGE" value="test dont works" />
+    <MESSAGE value="Gonna write some tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gonna write some tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProductPack$ProductServiceTest_countByFilter.ic" NAME="ProductServiceTest.countByFilter Coverage Results" MODIFIED="1678901381193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
