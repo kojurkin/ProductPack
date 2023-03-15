@@ -13,7 +13,7 @@ class ProductServiceTest {
 
     @Test
     void countByFilter() throws Exception {
-        List prods = new ArrayList<>();
+        List<Product> prods = new ArrayList<>();
         WeightProduct p2 = new WeightProduct("GoodName", "describe");
         SingleProduct p3 = new SingleProduct("GoodName", "describe", 12);
         ProductPackage pack = new ProductPackage("name",0.5);
